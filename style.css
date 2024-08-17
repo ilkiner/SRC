@@ -1,0 +1,454 @@
+
+nav {
+    background-color: white;
+    color: black;
+}
+
+.nav_row {
+    display: flex;
+    align-items: center;
+    padding: 30px 15px;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.left_side {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+}
+
+.left_side .linav {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+.left_side ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.left_side ul li {
+    padding: 4px 15px; 
+    color: black;
+}
+
+.left_side ul li a {
+    text-decoration: none;
+   color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.shop_menu {
+position: relative;
+
+
+}
+.shop_menu:hover #sub_menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+#sub_menu {
+position: absolute;
+top: 26px;
+width: 200px;
+border-radius: 10px;
+background-color: white;
+align-items: flex-start;
+color: rgb(170, 170, 161);
+padding: 20px;
+left: 0;
+display: flex;
+flex-direction: column;
+gap: 10px;
+visibility: hidden;
+opacity: 0;
+transition: 0.5s;
+z-index: 1000;
+
+}
+#sub_menu li {
+border-bottom: 1px solid black;
+}
+
+#sub_menu li:hover {
+    background-color: rgb(183, 243, 183);
+    color: rgb(120, 241, 120);
+}
+
+
+.right_side {
+    display: flex;
+    align-items: center;
+    
+    justify-content: flex-end; 
+}
+
+
+
+.search input[type="text"] {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+
+.search button {
+    background-color: white;
+    border: none;
+
+}
+.search {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border-radius: 25px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.search i {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    color: rgb(236, 236, 236);
+    border-color: black;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+    padding: 10px 0;
+    border-radius: 25px;
+    border-color: black;
+}
+
+.right_side p {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+}
+
+
+.img {
+    margin-right: 20px; 
+}
+
+#section2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#section2 .img1 {
+    display: flex;
+    width: 450px;
+    height: 750px;
+}
+.text_left {
+   width: 270px;
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    padding: 30px 15px;
+    justify-content: flex-start;
+    position: absolute;
+    flex-direction: column;
+   
+}
+.discoverbtn {
+    width: 200px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    margin: 30px;
+    
+  
+    
+}
+.discoverbtn a {
+    color: white;
+}
+.discoverbtn:hover {
+    background-color: rgb(153, 222, 153);
+    color: rgb(120, 241, 120);
+}
+
+
+#shopify_section {
+    display: flex;
+    flex-direction: column;
+}
+#shopify_section .product-row p {
+    background-color: white;
+    color:  #8DBF27;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.lukanishop_img {
+    flex: 1;
+}
+
+.lukanishop_img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.welcome_lukani {
+    flex: 2;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome_lukani h3 {
+    font-size: 14px;
+    color: #8DBF27; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome_lukani h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.welcome_lukani p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.welcome_lukani_footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome_lukani_footer img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 200px;
+    
+}
+
+#shopify_section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_products {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.our_products .titles {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.popup_cart_image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .product-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+#section3 {
+    background-color: #f8f9fa; 
+   padding: 45px;
+    text-align: center; 
+}
+
+
+#section3 .section_tittle h3 {
+    font-size: 32px; 
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#section3 .section_tittle h5 {
+    font-size: 24px; 
+    margin: 0 auto 10px auto; 
+    color: #333;
+    width: fit-content; 
+    padding: 0 15px; 
+}
+
+#section3 .section_tittle p {
+    font-size: 18px; 
+    color: #555; 
+    margin: 0 auto 20px auto; 
+    max-width: 600px; 
+    font-style: italic;
+    padding-bottom: 50px;
+}
+
+#section3 .section_tittle i {
+    font-size: 27px; 
+    color: #f1f8ff; 
+    margin-bottom: 20px;
+    display: block;
+}
+
+#section3 .section_tittle img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #d0d2d3; 
+}
+
+#section3 .section_tittle p:last-of-type {
+    font-weight: bold;
+    color: #333; 
+}
+
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#form_group {
+    display: flex;
+    position: relative;
+   text-align: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 9px;
+   margin-top: 15px;
+}
+
+#form_group .form input {
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px 10px 10px 0; 
+    font-size: 16px; 
+    border: none; 
+    border-bottom: 2px solid #ccc; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+    background-color: transparent;
+}
+
+#form_group .form {
+    display: flex;
+    align-items: center;
+}
+
+#form_group .form i {
+    font-size: 24px;
+    color: #333; 
+    margin-right: 12px;
+}
+
+#form_group .form button {
+    background-color: white;
+    border: none; 
+    border-bottom: none; 
+}
+
+#form_group .form button:hover {
+    background-color: rgb(153, 222, 153);
+    color: black;
+}
+
+
+
+
+ #section_lukani_footer {
+   background-color: #b8b5b5;
+   padding: 25px;
+   
+
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.footer_app {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.third_area ul li {
+    display: inline;
+}
+
+.footer_app li {
+    display: inline;
+    list-style: none;
+}
+.footer_app ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#section_lukani_footer ul  {
+    list-style: none;
+}
+
+.first_area .second_area .third_are .fourth_area {
+flex: 1;
+box-sizing: border-box;
+padding: 10px;
+min-width: 250px;
+max-width: 600px;
+}
+
+.fourth_area ul {
+    list-style: none;
+
+} 
+
+
